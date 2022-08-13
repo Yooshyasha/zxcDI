@@ -2,7 +2,7 @@ local vkeys = require 'vkeys' -- все подключают, хз зачем, �
 local inicfg = require 'inicfg'
 local dlstatus = require('moonloader').download_status
 update_state = false 
-local script_vers = 0.2
+local script_vers = 1
 local script_vers_text = "1.00"
 local update_url = "https://raw.githubusercontent.com/Yooshyasha/zxcDI/main/update.ini"
 local update_path = getWorkingDirectory() .. "/update.ini"
@@ -23,7 +23,7 @@ function main()
 	sampAddChatMessage("{93cfcb}[zxcDI]: {7ad633} Loaded! Used: /zxc id! Please ID!! {d10000}/zxc iD!!!!!", -1) -- сообщение в чат
 
 	wait(5000)
-
+	sampAddChatMessage("this is version 1.0")
 	sampAddChatMessage("{93cfcb}[zxcDI]: {7ad633} A new version! 1.0 {d10000}Autoupdate! New memes!", -1)
 	downloadUrlToFile(update_url, update_path, function(id, status) 
 		if status == dlstatus.STATUS_ENDDOWNLOADDATA then
