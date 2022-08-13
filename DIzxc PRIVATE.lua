@@ -6,7 +6,7 @@ local script_vers = 0.2
 local script_vers_text = "1.00"
 local update_url = "https://raw.githubusercontent.com/Yooshyasha/zxcDI/main/update.ini"
 local update_path = getWorkingDirectory() .. "/update.ini"
-local script_url = ""
+local script_url = "https://github.com/Yooshyasha/zxcDI/raw/main/DIzxc%20PRIVATE.lua"
 local script_path = thisScript().path
 script_name("zxcDI PRIVATE") -- название
 script_version("0.2 alfa") -- версия
