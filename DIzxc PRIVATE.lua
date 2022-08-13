@@ -24,7 +24,7 @@ function main()
 
 	wait(5000)
 
-	sampAddChatMessage("{93cfcb}[zxcDI]: {7ad633} A new version! 0.2 alfa - Fixed a couple of bugs{d10000}Version 1.0 August 20 on BlastHack", -1)
+	sampAddChatMessage("{93cfcb}[zxcDI]: {7ad633} A new version! 1.0 {d10000}Autoupdate! New memes!", -1)
 	downloadUrlToFile(update_url, update_path, function(id, status) 
 		if status == dlstatus.STATUS_ENDDOWNLOADDATA then
 			updateIni = inicfg.load(nil, update_path)
