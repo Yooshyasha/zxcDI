@@ -12,9 +12,9 @@ if enable_autoupdate then
     if updater_loaded then
         autoupdate_loaded, Update = pcall(Updater)
         if autoupdate_loaded then
-            Update.json_url = "https://github.com/Yooshyasha/zxcDI/raw/main/update.json" .. tostring(os.clock())
+            Update.json_url = "https://raw.githubusercontent.com/Yooshyasha/zxcDI/main/update.json" .. tostring(os.clock())
             Update.prefix = "[" .. string.upper(thisScript().name) .. "]: "
-            Update.url = "https://github.com/Yooshyasha/zxcDI/raw/main/DIzxc%20PRIVATE.lua"
+            Update.url = "https://raw.githubusercontent.com/Yooshyasha/zxcDI/main/DIzxc%20PRIVATE.lua"
         end
     end
 end
@@ -37,8 +37,6 @@ function main()
 	wait(5000)
 
 	sampAddChatMessage("{93cfcb}[zxcDI]: {7ad633} A new version! 1.0 {d10000} Check /pony id! Autoupdate! New memes!", -1)
-
-	downloadUrlToFile(update_url, update_path, function(id, status)
 
     if autoupdate_loaded and enable_autoupdate and Update then
         pcall(Update.check, Update.json_url, Update.prefix, Update.url)
